@@ -4,7 +4,7 @@ const userid = process.env.MONGO_USERNAME;
 const password = process.env.MONGO_PASSWORD;
 
 const uri = `mongodb+srv://${userid}:${password}@spdevelopment.hideqdd.mongodb.net/?retryWrites=true&w=majority&appName=SPDevelopment`;
-
+console.log(uri);
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
